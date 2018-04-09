@@ -1,0 +1,551 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: -moz-linear-gradient(top, rgba(30,33,41,1) 0%, rgba(43,46,51,1) 16%, rgba(50,58,71,1) 31%, rgba(60,68,82,1) 69%, rgba(24,26,28,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(30,33,41,1)), color-stop(16%, rgba(43,46,51,1)), color-stop(31%, rgba(50,58,71,1)), color-stop(69%, rgba(60,68,82,1)), color-stop(100%, rgba(24,26,28,1)));
+    background: -webkit-linear-gradient(top, rgba(30,33,41,1) 0%, rgba(43,46,51,1) 16%, rgba(50,58,71,1) 31%, rgba(60,68,82,1) 69%, rgba(24,26,28,1) 100%);
+    background: -o-linear-gradient(top, rgba(30,33,41,1) 0%, rgba(43,46,51,1) 16%, rgba(50,58,71,1) 31%, rgba(60,68,82,1) 69%, rgba(24,26,28,1) 100%);
+    background: -ms-linear-gradient(top, rgba(30,33,41,1) 0%, rgba(43,46,51,1) 16%, rgba(50,58,71,1) 31%, rgba(60,68,82,1) 69%, rgba(24,26,28,1) 100%);
+    background: linear-gradient(to bottom, rgba(30,33,41,1) 0%, rgba(43,46,51,1) 16%, rgba(50,58,71,1) 31%, rgba(60,68,82,1) 69%, rgba(24,26,28,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e2129', endColorstr='#181a1c', GradientType=0 );
+    background-repeat: no-repeat;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+#side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 5em;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin-top: 1.5em;
+    margin-right: 5em;
+}
+
+#side-nav-title {
+    font-size: 1.4rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-top: 0.7em !important;
+    margin-bottom: 1em !important;
+}
+
+#top-nav {
+    position: fixed;
+    left: 7em;
+    top: 0;
+    right: 0;
+    padding: 0.5em; 
+}
+
+.top-nav-list {
+    float: right;
+}
+
+.top-nav-list ul {
+    list-style-type: none;
+}
+
+.top-nav-list ul li {
+    display: inline-block;
+    color: white;
+    margin-left: 1em;
+    opacity: 0.8
+}
+
+.top-nav-list ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+#side-nav-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#main-container {
+    margin-left: 5em;
+    max-width: 100%;
+    padding: 2em;       
+}
+
+.side-nav-profile {
+    margin-top: 0.5em;
+}
+
+.side-nav-profile img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.side-nav-info {
+    margin-top: 0.5em;
+}
+
+.side-nav-info h5 {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+#side-nav-info-name {
+    font-size: 1.2rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.side-nav-divider hr {
+    opacity: 0.3;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.side-nav-list ul {
+    list-style-type: none;
+}
+
+.side-nav-list ul li {
+    text-align:center;
+    padding: 0.7em;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1;
+}
+
+.side-nav-list ul li i {
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0.5;
+}
+
+.side-nav-list ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    margin: 0;
+    margin-left: 0.6em;
+    padding: 0;
+    opacity: 0.3;
+
+}
+
+.side-nav-list-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    text-decoration: underline; 
+    margin-bottom: 0.5em;   
+}
+
+.margin-top {
+    margin-top: 1em;
+}
+
+.alert-card {
+    padding: 1em;
+    font-size: 0.8rem;
+    color: white;
+    background-color: rgb(255, 56, 56);
+    border: 1px solid rgb(112, 16, 16);
+}
+
+.nav-active {
+    border-right: 2px solid rgb(255,194,0);
+}
+.nav-active a,
+.nav-active i {
+    opacity: 1 !important;
+}
+
+.graph-summary {
+ background-color: rgba(0,0,0,0.2);
+ padding: 1em;
+ padding-top: 0;   
+}
+
+.card {
+
+}
+
+.card-primary {
+    background-color: rgba(0,0,0,0.2);
+    padding: 1em;
+    color: white;
+    font-size: 1rem;
+}
+
+.card-primary h5 {
+    font-size: 1.2rem;
+    border-bottom:2px solid rgb(255,194,0);
+
+}
+
+.card-primary h5 i {
+    color: rgb(255,194,0);
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.user-summary-announcements p {
+    margin-top: 1em;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    text-align: justify;
+    padding: 0.5em;
+}
+
+.alert-summary h5 {
+    border-bottom:2px solid rgb(0, 255, 128);
+}
+
+.alert-summary ul {
+    margin-top: 1em;
+    list-style-type: none;
+}
+
+.alert-summary button {
+    float: right;
+}
+
+.button {
+    padding: 0.7em;
+    line-height: 0;
+    color: white;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 0.8rem;
+    opacity: 1;
+    margin-left: 0.5em;
+}
+
+.button-blue {
+    background-color: rgb(0, 183, 255);
+    border: 1px solid rgb(3, 57, 78);
+}
+
+.button:hover {
+    color: white;
+    border: 1px solid black;
+}
+
+.button-red {
+    background-color: rgb(255, 57, 57);
+    border: 1px solid rgb(204, 40, 40); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
